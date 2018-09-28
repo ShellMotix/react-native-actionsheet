@@ -24,7 +24,7 @@ class ExampleA extends React.Component {
   render () {
     return (
       <View style={styles.wrapper}>
-        <Text style={{marginBottom: 20}} >I like {options[this.state.selected] || '...'}</Text>
+        <Text style={{ marginBottom: 20 }} >I like {options[this.state.selected] || '...'}</Text>
         <Text style={styles.button} onPress={this.showActionSheet}>Example A</Text>
         <ActionSheet
           ref={o => { this.ActionSheet = o }}

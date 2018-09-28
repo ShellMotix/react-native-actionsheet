@@ -35,7 +35,7 @@ class ExampleB extends React.Component {
   render () {
     return (
       <View style={styles.wrapper}>
-        <Text style={{marginBottom: 20}} >I like {options[this.state.selected] || '...'}</Text>
+        <Text style={{ marginBottom: 20 }} >I like {options[this.state.selected] || '...'}</Text>
         <Text style={styles.button} onPress={this.showActionSheet}>Example B</Text>
         <ActionSheet
           ref={o => { this.ActionSheet = o }}
@@ -45,7 +45,7 @@ class ExampleB extends React.Component {
           cancelButtonIndex={CANCEL_INDEX}
           destructiveButtonIndex={DESTRUCTIVE_INDEX}
           onPress={this.handlePress}
-          styles={{messageBox: { height: 60 }}}
+          styles={{ messageBox: { height: 60 } }}
         />
       </View>
     )
